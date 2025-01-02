@@ -1,0 +1,97 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#changelog-container {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#changelog-container>p {
+  color: #808080;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.changelog-entries-container {
+  position: relative;
+  padding: 20px;
+}
+
+.entry-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  line-height: 1.5em;
+}
+
+.entry-date {
+  display: inline-block;
+  text-align: center;
+  width: calc(30% - 20px);
+  color: #808080;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.entry-separator {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.entry-description {
+  display: inline-block;
+  text-align: left;
+  width: calc(70% - 20px);
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.pipeline {
+  position: absolute;
+  width: 2px;
+  top: 0px;
+  height: 100%;
+  left: calc(30% + 11px);
+  background-color: black;
+}
+
+#visit-link {
+  display: block;
+  width: 220px;
+  height: 40px;
+  border-radius: 7px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  user-select: none;
+}
+
+@media (max-width: 350px) {
+  .entry-date {
+    display: none;
+  }
+
+  .pipeline {
+    left: 29px;
+  }
+}
